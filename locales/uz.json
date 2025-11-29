@@ -1,1 +1,11 @@
-
+{
+  "start_welcome": "Xush kelibsiz! Tilni tanlang / Tilni o'zgartirish",
+  "ask_phone": "Iltimos, telefon raqamingizni yuboring",
+  "choose_role": "Rolni tanlang",
+  "profile_saved": "Profil saqlandi",
+  "create_listing_start": "E'lon yaratish jarayoni boshlandi",
+  "listing_saved_draft": "E'lon saqlandi (qoralama)",
+  "listing_sent_moderation": "E'lon moderatsiyaga yuborildi",
+  "admin_approve": "E'lon tasdiqlandi va kanalda e'lon qilindi",
+  "admin_reject": "E'lon rad etildi"
+}
