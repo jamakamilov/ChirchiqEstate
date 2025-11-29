@@ -1,1 +1,11 @@
-
+{
+  "start_welcome": "Welcome! Choose language",
+  "ask_phone": "Please share your phone number",
+  "choose_role": "Choose a role",
+  "profile_saved": "Profile saved",
+  "create_listing_start": "Listing creation started",
+  "listing_saved_draft": "Listing saved (draft)",
+  "listing_sent_moderation": "Listing sent for moderation",
+  "admin_approve": "Listing approved and posted to channel",
+  "admin_reject": "Listing rejected"
+}
