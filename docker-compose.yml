@@ -1,1 +1,32 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: realestate
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
+  bot:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    environment:
+      BOT_TOKEN: "${BOT_TOKEN}"
+      DATABASE_URL: "postgresql+asyncpg://postgres:postgres@db:5432/realestate"
+      ADMIN_IDS: "${ADMIN_IDS}"
+      CHANNEL_ID: "${CHANNEL_ID}"
+      COMMISSION_PERCENT: "2.0"
+    volumes:
+      - ./media:/app/media
+    ports:
+      - "8080:8080"
+
+volumes:
+  db_data:
